@@ -96,6 +96,7 @@ namespace System.Windows.Forms
 
 		public RibbonItem()
 		{
+			_text = "";
 			_enabled = true;
 			_visible = true;
 			AllowUncheckingAllButtonsInCheckedGroup=true;
