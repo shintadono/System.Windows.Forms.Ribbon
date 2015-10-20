@@ -127,6 +127,7 @@ namespace System.Windows.Forms
         private void ToolStripDropDown_Opening(object sender, CancelEventArgs e)
         {
             OnOpening(e);
+            WrappedDropDown.Size = Size; // Since OnOpening(e) can change the Size, we need to tell the DropDown
         }
         
         /// <summary>
