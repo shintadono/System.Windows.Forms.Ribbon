@@ -516,6 +516,7 @@ namespace System.Windows.Forms
 			}
 
 			Height = actualHeight + ContentMargin.Vertical;
+			if (WrappedDropDown != null) WrappedDropDown.Height = Height;
 			rcontent = ContentBounds;
 
 			#endregion
